@@ -1,0 +1,22 @@
+{
+  "name": "@date-fns/upgrade",
+  "version": "1.0.0",
+  "description": "A tool for upgrading date-fns versions",
+  "main": "index.js",
+  "repository": "https://github.com/date-fns/date-fns-upgrade",
+  "author": "Sasha Koss <koss@nocorp.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.0.10",
+    "babel-preset-power-assert": "^3.0.0",
+    "date-fns": "^2.0.0-beta.1",
+    "jest": "^24.8.0",
+    "power-assert": "^1.6.1",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.2"
+  }
+}
