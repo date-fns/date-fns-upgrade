@@ -47,7 +47,7 @@ type LegacyParseOptions = {
 export default function legacyParse(
   argument: any,
   options: LegacyParseOptions = {}
-) {
+): Date {
   if (isDate(argument)) {
     // Prevent the date to lose the milliseconds when passed to new Date() in IE10
     return new Date(argument.getTime())
