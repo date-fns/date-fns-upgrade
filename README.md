@@ -2,7 +2,8 @@
 
 Support package with helper functions for `date-fns` upgrade from `1.x` to `2.x`
 
-Codemod that will help you apply these helpers automatically located here - [date-fns-upgrade-codemod](https://github.com/date-fns/date-fns-upgrade-codemod).
+Codemod that will help you apply these helpers automatically located here -
+[date-fns-upgrade-codemod](https://github.com/date-fns/date-fns-upgrade-codemod).
 
 ## Installation
 
@@ -16,9 +17,10 @@ yarn add @date-fns/upgrade
 
 ### convertTokens
 
-`convertTokens` is a helper function used for 2nd argument of `format` function to convert date tokens like `YYYY` to new format. See [this post](https://blog.date-fns.org/post/unicode-tokens-in-date-fns-v2-sreatyki91jg) for more details.
-
-Obviously, you can convert tokens manually :)
+`convertTokens` is a helper function used for 2nd argument of `format` function
+to convert date tokens like `YYYY` to new format.
+See [this post](https://blog.date-fns.org/post/unicode-tokens-in-date-fns-v2-sreatyki91jg)
+for more details.
 
 ```diff
 +import { convertTokens } from '@date-fns/upgrade/v2'
@@ -32,7 +34,7 @@ const formattedDate = format(
 
 ### legacyParse
 
-`date-fns@2.x` functions don't accept string as arguments any more (see [CHANGELOG](https://github.com/date-fns/date-fns/blob/master/CHANGELOG.md#changed)), `legacyParse` is used to simplify that transition. See [this post](https://blog.date-fns.org/post/we-cut-date-fns-v2-minimal-build-size-down-to-300-bytes-and-now-its-the-smallest-date-library-18f2nvh2z0yal) for details on "why" this was done.
+`date-fns@2.x` functions don't accept string as arguments any more (see [CHANGELOG](https://github.com/date-fns/date-fns/blob/master/CHANGELOG.md#changed)), `legacyParse` is used to simplify that transition, it uses algorithm from `1.x` to do that. See [this post](https://blog.date-fns.org/post/we-cut-date-fns-v2-minimal-build-size-down-to-300-bytes-and-now-its-the-smallest-date-library-18f2nvh2z0yal) for details on "why" this was done.
 
 ```diff
 +import { legacyParse } from '@date-fns/upgrade/v2'
@@ -44,9 +46,9 @@ const formattedDate = format(
 )
 ```
 
-### legacyParseMap
+### legacyParseMap
 
-`legacyParseMap` is used same as `legacyParse` but for arguments that accept arrays of data
+`legacyParseMap` is used same as `legacyParse` but for arguments that accept arrays.
 
 ```diff
 +import { legacyParseMap } from '@date-fns/upgrade/v2'
