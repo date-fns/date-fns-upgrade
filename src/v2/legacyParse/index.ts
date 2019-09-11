@@ -1,4 +1,4 @@
-import isDate from 'date-fns/isDate'
+import { isDate } from 'date-fns'
 
 const MILLISECONDS_IN_HOUR = 3600000
 const MILLISECONDS_IN_MINUTE = 60000
