@@ -1,6 +1,6 @@
 {
   "name": "@date-fns/upgrade",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool for upgrading date-fns versions",
   "main": "index.js",
   "repository": "https://github.com/date-fns/date-fns-upgrade",
