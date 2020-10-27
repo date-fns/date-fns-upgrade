@@ -266,6 +266,11 @@ describe('format', () => {
     })
 
     describe('hours and am/pm', () => {
+      it('12 am', () => {
+        const date = new Date(1986, 3 /* Apr */, 6, 0, 0, 0, 900)
+        assert(format(date, convertTokens('h:mm a')) === '12:00 am')
+      })
+
       it('12 a.m.', () => {
         const date = new Date(1986, 3 /* Apr */, 6, 0, 0, 0, 900)
         assert(format(date, convertTokens('h:mm aa')) === '12:00 a.m.')
