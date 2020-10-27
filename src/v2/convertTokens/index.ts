@@ -25,7 +25,7 @@ const tokensMap: TokensMap = {
   ddd: 'iii',
   dddd: 'iiii',
   A: 'a',
-  a: 'a',
+  a: 'aaaaa\'m\'',
   aa: 'aaaa',
   E: 'i',
   W: 'I',
