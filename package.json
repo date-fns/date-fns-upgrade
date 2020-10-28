@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "A tool for upgrading date-fns versions",
   "main": "index.js",
+  "types": "index.d.ts",
   "repository": "https://github.com/date-fns/date-fns-upgrade",
   "author": "Sasha Koss <koss@nocorp.me>",
   "license": "MIT",
@@ -19,9 +20,10 @@
     "typescript": "^3.5.2"
   },
   "dependencies": {
-    "date-fns": "^2.1"
+    "date-fns": "*"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc -p ."
   }
 }
