@@ -8,7 +8,9 @@
     "outDir": "lib",
     "strict": true,
     "noImplicitAny": true,
-    "allowSyntheticDefaultImports": true
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node"
   },
   "exclude": ["**/test.ts", "lib", "node_modules"]
 }
